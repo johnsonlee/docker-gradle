@@ -1,0 +1,9 @@
+version: "3.0"
+
+services:
+  gradle:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: johnsonlee/gradle-6.9:latest
+
