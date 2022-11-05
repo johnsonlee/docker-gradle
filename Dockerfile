@@ -1,4 +1,4 @@
-FROM johnsonlee/gradle-6.9:latest
+FROM johnsonlee/gradle-7.4:latest
 
 MAINTAINER Johnson g.johnsonlee@gmail.com
 
@@ -21,10 +21,9 @@ repositories {\n                                                                
 }\n                                                                               \
 \n                                                                                \
 dependencies {\n                                                                  \
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))\n                 \
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")\n                   \
-    implementation("org.jetbrains.kotlin:kotlin-reflect")\n                       \
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")\n                   \
+    implementation(kotlin("bom"))\n                                               \
+    implementation(kotlin("stdlib"))\n                                            \
+    implementation(kotlin("reflect"))\n                                           \
     implementation("org.springframework.boot:spring-boot-starter-actuator")\n     \
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")\n     \
     implementation("org.springframework.boot:spring-boot-starter-validation")\n   \
