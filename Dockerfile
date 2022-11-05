@@ -30,7 +30,6 @@ dependencies {\n                                                                
     implementation("org.springframework.boot:spring-boot-starter-web")\n          \
     implementation("org.springframework.cloud:spring-cloud-starter")\n            \
     implementation("io.micrometer:micrometer-registry-prometheus")\n              \
-    implementation("io.springfox:springfox-boot-starter:3.0.0")\n                 \
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")\n        \
     testImplementation("org.springframework.boot:spring-boot-starter-test")\n     \
 }\n                                                                               \
@@ -46,6 +45,11 @@ tasks.withType<KotlinCompile> {\n                                               
         freeCompilerArgs = listOf("-Xjsr305=strict")\n                            \
     }\n                                                                           \
 }\n                                                                               \
+\n                                                                                \
+tasks.withType<Test> {\n                                                          \
+    useJUnitPlatform()\n                                                          \
+}\n                                                                               \
+\n                                                                                \
 val jar by tasks.getting(Jar::class) {\n                                          \
     enabled = false\n                                                             \
 }\n                                                                               \
