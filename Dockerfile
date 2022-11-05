@@ -16,10 +16,10 @@ repositories {\n                                                              \
 }\n                                                                           \
 dependencies {\n                                                              \
     implementation(gradleApi())\n                                             \
-    implementation(platform("org.jetbrains.kotlin:kotlin-bom"))\n             \
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")\n               \
-    testImplementation("org.jetbrains.kotlin:kotlin-test")\n                  \
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")\n            \
+    implementation(kotlin("bom"))\n                                           \
+    implementation(kotlin("stdlib"))\n                                        \
+    testImplementation(kotlin("test"))\n                                      \
+    testImplementation(kotlin("test-junit"))\n                                \
 }\n                                                                           \
 ' > build.gradle.kts &&                                                       \
 ./gradlew build --no-daemon --no-build-cache &&                               \

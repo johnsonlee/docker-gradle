@@ -1,6 +1,6 @@
 ## Getting Started
 
 ```bash
-docker pull johnsonlee/gradle-6.9:latest
+docker pull johnsonlee/gradle-7.4:latest
 ```
 
