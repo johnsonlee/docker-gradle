@@ -1,9 +1,9 @@
-version: "3.0"
+version: "3.8"
 
 services:
   gradle:
     build:
       context: .
       dockerfile: Dockerfile
-    image: johnsonlee/gradle-7.4:latest
+    image: johnsonlee/gradle-8.3:latest
 

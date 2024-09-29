@@ -1,4 +1,4 @@
-FROM johnsonlee/java15:latest
+FROM johnsonlee/java17:latest
 
 MAINTAINER Johnson g.johnsonlee@gmail.com
 
